@@ -6,7 +6,7 @@
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 16:23:54 by acastano          #+#    #+#             */
-/*   Updated: 2021/11/10 20:26:00 by acastano         ###   ########.fr       */
+/*   Updated: 2021/11/15 21:33:26 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,15 +39,25 @@ size_t	ft_strlen(const char *s);
 
 //modify stuff
 void	ft_strclr(char *s);
+int	ft_atoi(const char *s);
+void	*ft_memset(void *b, int c, size_t len);
+//void	ft_bzero(void *s, size_t n);
 
 //compare stuff
 int	ft_strequ(char const *s1, char const *s2);
-//strstr//search needle in haystack
+int	ft_strnequ(char const *s1, char const *s2, size_t n);
+int	ft_strcmp(const char *s1, const char *s2);
+int	ft_strncmp(const char *s1, const char *s2, size_t n);
+char	*ft_strstr(const char *haystack, const char *needle);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 
 //check
 int	ft_isalpha(int c);
 int	ft_tolower(int c);
 int	ft_toupper(int c);
 int	ft_isdigit(int c);
+int	ft_isalnum(int c);
+int	ft_isascii(int c);
+int	ft_isprint(int c);
 
 #endif

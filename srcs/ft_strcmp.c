@@ -1,24 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/04 18:20:04 by acastano          #+#    #+#             */
-/*   Updated: 2021/11/12 17:41:12 by acastano         ###   ########.fr       */
+/*   Created: 2021/11/11 19:48:33 by acastano          #+#    #+#             */
+/*   Updated: 2021/11/15 20:04:57 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-size_t	ft_strlen(const char *s)
+int	ft_strcmp(const char *s1, const char *s2)
 {
-	size_t	len;
-
-	len = 0;
-	while (*s++)
+	while (*s1)
 	{
-		len++;
+		if (*s1 > *s2)
+			return (1);
+		if (*s1 < *s2)
+			return (-1);
+		s1++;
+		s2++;
 	}
-	return (len);
+	if (*s2)
+		return (-1);
+	return (0);
 }

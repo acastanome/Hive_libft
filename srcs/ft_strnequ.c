@@ -1,24 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strnequ.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/04 18:20:04 by acastano          #+#    #+#             */
-/*   Updated: 2021/11/12 17:41:12 by acastano         ###   ########.fr       */
+/*   Created: 2021/11/12 15:05:06 by acastano          #+#    #+#             */
+/*   Updated: 2021/11/12 15:25:36 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-size_t	ft_strlen(const char *s)
+int	ft_strnequ(char const *s1, char const *s2, size_t n)
 {
-	size_t	len;
+	size_t	i;
 
-	len = 0;
-	while (*s++)
+	i = 0;
+	while (s1[i] && (i < n))
 	{
-		len++;
+		if (s1[i] != s2[i])
+			return (0);
+		s1++;
+		s2++;
 	}
-	return (len);
+	if (s2[i] && (i < n))
+		return (0);
+	return (1);
 }

@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/04 18:20:04 by acastano          #+#    #+#             */
-/*   Updated: 2021/11/12 17:41:12 by acastano         ###   ########.fr       */
+/*   Created: 2021/11/15 20:13:03 by acastano          #+#    #+#             */
+/*   Updated: 2021/11/15 20:37:16 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-size_t	ft_strlen(const char *s)
+void	bzero(void *s, size_t n)
 {
-	size_t	len;
+	size_t	i;
 
-	len = 0;
-	while (*s++)
+	i = 0;
+	while (i < n && n != 0)
 	{
-		len++;
+		s[i] = '\0';
+		i++;
 	}
-	return (len);
 }
