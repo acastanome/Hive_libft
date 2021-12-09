@@ -1,19 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl.c                                       :+:      :+:    :+:   */
+/*   ft_count_3whitespace_b.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/10 15:55:54 by acastano          #+#    #+#             */
-/*   Updated: 2021/11/10 16:34:36 by acastano         ###   ########.fr       */
+/*   Created: 2021/12/01 21:31:11 by acastano          #+#    #+#             */
+/*   Updated: 2021/12/01 22:24:01 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
-void	ft_putendl(char const *s)
+size_t	ft_count_3whitespace_b(const char *s)
 {
-	ft_putstr(s);
-	write (1, "\n", 1);
+	size_t	count;
+
+	count = 0;
+	if (!s)
+		return (0);
+	while (ft_is_3whitespace(*s) == 1)
+	{
+		count++;
+		s++;
+	}
+	return (count);
 }

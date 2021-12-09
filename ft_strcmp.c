@@ -1,26 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strequ.c                                        :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/09 21:19:20 by acastano          #+#    #+#             */
-/*   Updated: 2021/11/12 18:48:05 by acastano         ###   ########.fr       */
+/*   Created: 2021/11/11 19:48:33 by acastano          #+#    #+#             */
+/*   Updated: 2021/11/19 18:14:52 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int	ft_strequ(char const *s1, char const *s2)
+int	ft_strcmp(const char *s1, const char *s2)
 {
-	while (*s1)
+	while (*s1 || *s2)
 	{
 		if (*s1 != *s2)
-			return (0);
+			return ((unsigned char)*s1 - (unsigned char)*s2);
 		s1++;
 		s2++;
 	}
-	if (*s2)
-		return (0);
-	return (1);
+	return (0);
 }

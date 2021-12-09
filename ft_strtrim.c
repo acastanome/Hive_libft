@@ -1,30 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/12 14:15:17 by acastano          #+#    #+#             */
-/*   Updated: 2021/11/15 20:14:31 by acastano         ###   ########.fr       */
+/*   Created: 2021/12/01 21:07:06 by acastano          #+#    #+#             */
+/*   Updated: 2021/12/02 19:28:10 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-char	*ft_strstr(const char *haystack, const char *needle)
+#include <stdlib.h>
+char	*ft_strtrim(char const *s)
 {
-	size_t	i;
-	size_t	len;
+	size_t	countB;
+	size_t	countE;
+	size_t	trimlen;
 
-	i = 0;
-	len = ft_strlen(needle);
-	if (!needle)
-		return ((char *)haystack);
-	while (haystack[i])
-	{
-		if (ft_strncmp(haystack + i, needle, len) == 0)
-			return ((char *)haystack + i);
-		i++;
-	}
-	return (NULL);
+	if (!s)
+		return (NULL);
+	countB = ft_count_3whitespace_b(s);
+	countE = ft_count_3whitespace_e(s);
+	trimlen = ft_strlen(s) - countB - countE;
+	if (countB == ft_strlen(s))
+		trimlen = ft_strlen(s) - countB;
+	return (ft_strsub(s, countB, trimlen));
 }

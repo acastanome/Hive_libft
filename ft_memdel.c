@@ -1,28 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_memdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/11 19:48:33 by acastano          #+#    #+#             */
-/*   Updated: 2021/11/15 20:04:57 by acastano         ###   ########.fr       */
+/*   Created: 2021/11/30 18:38:32 by acastano          #+#    #+#             */
+/*   Updated: 2021/11/30 19:36:57 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int	ft_strcmp(const char *s1, const char *s2)
+#include <stdlib.h>
+void	ft_memdel(void **ap)
 {
-	while (*s1)
-	{
-		if (*s1 > *s2)
-			return (1);
-		if (*s1 < *s2)
-			return (-1);
-		s1++;
-		s2++;
-	}
-	if (*s2)
-		return (-1);
-	return (0);
+	if (ap == NULL)
+		return ;
+	free(*ap);
+	*ap = NULL;
 }

@@ -1,29 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnequ.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/12 15:05:06 by acastano          #+#    #+#             */
-/*   Updated: 2021/11/12 15:25:36 by acastano         ###   ########.fr       */
+/*   Created: 2021/12/01 23:09:24 by acastano          #+#    #+#             */
+/*   Updated: 2021/12/02 13:16:01 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int	ft_strnequ(char const *s1, char const *s2, size_t n)
+#include <unistd.h>
+void	ft_putstr_fd(char const *s, int fd)
 {
-	size_t	i;
+	size_t	len;
 
-	i = 0;
-	while (s1[i] && (i < n))
-	{
-		if (s1[i] != s2[i])
-			return (0);
-		s1++;
-		s2++;
-	}
-	if (s2[i] && (i < n))
-		return (0);
-	return (1);
+	if (!fd || !s)
+		return ;
+	len = ft_strlen(s);
+	write(fd, s, len);
 }
