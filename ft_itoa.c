@@ -6,12 +6,11 @@
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 13:44:00 by acastano          #+#    #+#             */
-/*   Updated: 2021/12/03 13:44:09 by acastano         ###   ########.fr       */
+/*   Updated: 2021/12/09 18:37:22 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 static int	ft_elements(long int n)
 {
 	int	el;

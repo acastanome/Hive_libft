@@ -6,16 +6,14 @@
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 14:36:03 by acastano          #+#    #+#             */
-/*   Updated: 2021/12/01 17:00:18 by acastano         ###   ########.fr       */
+/*   Updated: 2021/12/13 14:19:44 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 void	ft_striter(char *s, void (*f)(char *))
 {
-	if (!s)
-		return ;
-	while (*s)
+	while (s != 0 && f && *s)
 	{
 		f(s);
 		s++;
