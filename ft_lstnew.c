@@ -6,12 +6,13 @@
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 14:13:40 by acastano          #+#    #+#             */
-/*   Updated: 2021/12/07 14:59:22 by acastano         ###   ########.fr       */
+/*   Updated: 2022/01/27 17:31:35 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+
 t_list	*ft_lstnew(void const *content, size_t content_size)
 {
 	t_list	*new;

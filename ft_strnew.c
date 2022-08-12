@@ -6,12 +6,13 @@
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 13:14:35 by acastano          #+#    #+#             */
-/*   Updated: 2021/12/02 20:42:56 by acastano         ###   ########.fr       */
+/*   Updated: 2022/01/27 17:45:40 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+
 char	*ft_strnew(size_t size)
 {
 	char	*new;

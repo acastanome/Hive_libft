@@ -6,12 +6,13 @@
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 13:09:32 by acastano          #+#    #+#             */
-/*   Updated: 2021/12/03 16:20:07 by acastano         ###   ########.fr       */
+/*   Updated: 2022/01/27 17:46:22 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+
 static char	**ft_fail_free(char **main_s, size_t j)
 {
 	size_t	i;

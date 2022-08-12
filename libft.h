@@ -6,7 +6,7 @@
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 16:23:54 by acastano          #+#    #+#             */
-/*   Updated: 2021/12/09 17:34:04 by acastano         ###   ########.fr       */
+/*   Updated: 2022/04/15 18:15:35 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,5 +91,11 @@ size_t	ft_count_3whitespace_b(const char *s);
 size_t	ft_count_3whitespace_e(const char *s);
 size_t	ft_word_count(char const *s, char c);
 size_t	ft_strlen_tochar(const char *s, char c);
+
+//gnl defined BUFF_SIZE and FD_MAX in get_next_line.c
+int		get_next_line(const int fd, char **line);
+
+//Added
+void	ft_memdelarray(void **arr);
 
 #endif

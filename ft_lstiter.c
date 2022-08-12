@@ -6,11 +6,12 @@
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 13:31:20 by acastano          #+#    #+#             */
-/*   Updated: 2021/12/09 17:57:38 by acastano         ###   ########.fr       */
+/*   Updated: 2022/01/27 17:31:07 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
 	while (lst)

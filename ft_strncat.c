@@ -6,11 +6,12 @@
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 18:01:50 by acastano          #+#    #+#             */
-/*   Updated: 2021/12/09 15:52:20 by acastano         ###   ########.fr       */
+/*   Updated: 2022/01/27 17:44:49 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
 	size_t	s1len;

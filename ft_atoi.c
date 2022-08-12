@@ -6,11 +6,12 @@
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 17:53:19 by acastano          #+#    #+#             */
-/*   Updated: 2021/12/09 15:51:52 by acastano         ###   ########.fr       */
+/*   Updated: 2022/01/27 17:19:51 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 int	ft_atoi(const char *s)
 {
 	int	nb;

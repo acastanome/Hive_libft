@@ -6,11 +6,12 @@
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 17:26:53 by acastano          #+#    #+#             */
-/*   Updated: 2021/11/25 17:51:05 by acastano         ###   ########.fr       */
+/*   Updated: 2022/01/27 17:46:11 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
+
 char	*ft_strrchr(const char *s, int c)
 {
 	size_t	len;

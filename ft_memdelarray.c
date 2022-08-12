@@ -1,18 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_3whitespace.c                                :+:      :+:    :+:   */
+/*   ft_memdelarray.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/01 21:16:41 by acastano          #+#    #+#             */
-/*   Updated: 2022/01/27 17:27:39 by acastano         ###   ########.fr       */
+/*   Created: 2022/04/13 23:10:28 by acastano          #+#    #+#             */
+/*   Updated: 2022/04/15 18:15:15 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_is_3whitespace(const char c)
+#include "libft.h"
+#include <stdlib.h>
+
+void	ft_memdelarray(void **array)
 {
-	if (c == '\n' || c == '\t' || c == ' ')
-		return (1);
-	return (0);
+	void	**temp;
+
+	temp = *array;
+	while (*temp)
+		ft_memdel(temp++);
+	free(*array);
+	*array = NULL;
 }

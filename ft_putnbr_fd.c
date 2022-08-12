@@ -6,12 +6,13 @@
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 23:13:14 by acastano          #+#    #+#             */
-/*   Updated: 2021/12/02 13:06:05 by acastano         ###   ########.fr       */
+/*   Updated: 2022/01/27 17:40:02 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
+#include <unistd.h>
+
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (!fd)

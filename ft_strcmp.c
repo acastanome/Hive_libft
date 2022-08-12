@@ -6,11 +6,12 @@
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 19:48:33 by acastano          #+#    #+#             */
-/*   Updated: 2021/11/19 18:14:52 by acastano         ###   ########.fr       */
+/*   Updated: 2022/01/27 17:41:39 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 int	ft_strcmp(const char *s1, const char *s2)
 {
 	while (*s1 || *s2)

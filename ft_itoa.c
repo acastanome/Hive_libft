@@ -6,11 +6,12 @@
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 13:44:00 by acastano          #+#    #+#             */
-/*   Updated: 2021/12/09 18:37:22 by acastano         ###   ########.fr       */
+/*   Updated: 2022/01/27 17:23:43 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 static int	ft_elements(long int n)
 {
 	int	el;
@@ -34,13 +35,11 @@ char	*ft_itoa(int n)
 {
 	char		*s;
 	int			el;
-	int			i;
 	long int	nl;
 
 	nl = n;
 	el = ft_elements(nl);
 	s = ft_strnew(el);
-	i = 0;
 	if (!s)
 		return (NULL);
 	if (nl < 0)

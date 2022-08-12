@@ -6,11 +6,12 @@
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 20:48:37 by acastano          #+#    #+#             */
-/*   Updated: 2021/11/18 15:31:54 by acastano         ###   ########.fr       */
+/*   Updated: 2022/01/27 17:41:50 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 char	*ft_strcpy(char *dst, const char *src)
 {
 	int	i;

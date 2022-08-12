@@ -6,12 +6,13 @@
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 23:12:27 by acastano          #+#    #+#             */
-/*   Updated: 2021/12/02 13:16:33 by acastano         ###   ########.fr       */
+/*   Updated: 2022/01/27 17:39:21 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
+#include <unistd.h>
+
 void	ft_putendl_fd(char const *s, int fd)
 {
 	if (!fd || !s)

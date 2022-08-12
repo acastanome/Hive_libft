@@ -6,11 +6,12 @@
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 18:21:53 by acastano          #+#    #+#             */
-/*   Updated: 2021/12/03 13:42:41 by acastano         ###   ########.fr       */
+/*   Updated: 2022/01/27 17:36:30 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t	i;

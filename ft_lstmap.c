@@ -6,12 +6,13 @@
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 13:32:04 by acastano          #+#    #+#             */
-/*   Updated: 2021/12/08 13:06:43 by acastano         ###   ########.fr       */
+/*   Updated: 2022/01/27 17:31:19 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+
 static void	ft_lstfree(t_list **lst)
 {
 	free((*lst)->content);

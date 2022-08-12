@@ -6,12 +6,13 @@
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 20:14:53 by acastano          #+#    #+#             */
-/*   Updated: 2021/12/13 14:42:40 by acastano         ###   ########.fr       */
+/*   Updated: 2022/01/27 17:43:21 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t	size;

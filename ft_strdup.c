@@ -6,12 +6,13 @@
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 20:11:43 by acastano          #+#    #+#             */
-/*   Updated: 2021/12/09 14:26:12 by acastano         ###   ########.fr       */
+/*   Updated: 2022/01/27 17:42:19 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+
 char	*ft_strdup(const char *s1)
 {
 	char	*dup;

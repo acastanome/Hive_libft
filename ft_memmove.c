@@ -6,11 +6,12 @@
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/26 16:58:39 by acastano          #+#    #+#             */
-/*   Updated: 2021/11/29 18:20:15 by acastano         ###   ########.fr       */
+/*   Updated: 2022/01/27 17:37:41 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	if (dst < src)

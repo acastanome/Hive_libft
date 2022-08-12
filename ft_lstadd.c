@@ -6,11 +6,12 @@
 /*   By: acastano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 13:30:40 by acastano          #+#    #+#             */
-/*   Updated: 2021/12/07 13:31:03 by acastano         ###   ########.fr       */
+/*   Updated: 2022/01/27 17:30:05 by acastano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void	ft_lstadd(t_list **alst, t_list *new)
 {
 	if (!alst || !new)
